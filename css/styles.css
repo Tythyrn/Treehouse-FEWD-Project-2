@@ -21,6 +21,10 @@ header {
   margin: 0 auto;
 }
 
+h1 {
+  color: #0f91af;
+}
+
 h2 {
   font-weight: normal;
   margin-bottom: 10px;
@@ -30,7 +34,7 @@ p {
   font-size: 1.1em;
 }
 
-nav ul {
+ul {
   padding: 0;
 }
 
@@ -47,7 +51,12 @@ a {
   padding: 10px;
 }
 
+nav li a:hover {
+  background-color: #cfcfcf;
+}
+
 section {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -138,6 +147,29 @@ footer {
   display: none;
 }
 
+.skills {
+  overflow-x: hidden;
+  background-color: #cfcfcf;
+}
+
+.skills-list {
+  margin-left: -1px;
+  position: relative;
+}
+
+.skills-list li {
+  padding-left: .3em;
+  padding-right: .3em;
+  font-weight: bold;
+  border-left: 1px solid;
+  display: inline-block;
+}
+
+.skills-list li:first-child {
+  border-left: none;
+}
+
+
 /**
  * Media Queries
 */
@@ -194,6 +226,11 @@ footer {
 
   .footer-nav li {
     background-color: #fafafa;
+  }
+
+  .skills-list li {
+    padding-right: .5em;
+    padding-left: .5em;
   }
 }
 
