@@ -1,0 +1,228 @@
+/**
+ * Element Rules
+*/
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: #4a4a4a;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  background-color: #fafafa;
+  margin: 0 auto;
+}
+
+header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+a {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+section {
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+hr { 
+  display: block; 
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid #cecece;
+  margin: 0 auto; 
+  padding: 0; 
+  width: 90%;
+}
+
+/**
+ * Class Rules
+*/
+
+.intro {
+  width: 90%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.profile-pic {
+  width: 75%;
+  margin-bottom: 20px;
+}
+
+.profile-text {
+  color: #7f7f7f;
+}
+
+.portfolio-header {
+  padding-bottom: 30px;
+}
+
+.portfolio {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+
+.contact {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width: 90%;
+}
+
+.contact p {
+  color: #7f7f7f;
+}
+
+span {
+  font-weight: bold;
+}
+
+footer {
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.footer-student,
+.footer-back-top {
+  margin-top: 10px;
+  display: inline;
+}
+
+.footer-student {
+  float: left;
+}
+
+.footer-back-top {
+  float: right;
+}
+
+.footer-nav {
+  display: none;
+}
+
+/**
+ * Media Queries
+*/
+
+@media (min-width: 768px) {
+  nav ul {
+    text-align: center;
+  }
+
+  nav li {
+    background-color: #fafafa;
+    display: inline-block;
+  }
+
+  .profile-pic {
+    float: right;
+    width: 40%;
+    padding-left: 1.1em;
+  }
+
+  .profile-text {
+    float: left;
+    width: 60%;
+    text-align: left;
+  }
+
+  .portfolio {
+    width: 90%;
+  }
+
+  figure {
+    float: left;
+    width: 50%;
+    padding-left: .3em;
+    padding-right: .3em;
+  }
+
+  .contact {
+    width: 70%;
+  }
+
+  .footer-back-top {
+    display: none;
+  }
+
+  .footer-nav {
+    display: inline;
+    float: right;
+  }
+
+  .footer-nav ul {
+    margin: 0;
+  }
+
+  .footer-nav li {
+    background-color: #fafafa;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 1920px;
+  }
+
+  h1 {
+    display: inline;
+    float: left;
+  }
+
+  header nav {
+    display: inline;
+    float: right;
+  }
+
+  figure {
+    width: 33%;
+  }
+
+  .contact {
+    width: 45%;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
